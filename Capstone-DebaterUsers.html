@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="format" content="complete">
+</head>
+<body>
+
+<h1>Debater</h1>
+
+<h2>Assignment 2</h2>
+
+<h3>User Stories</h3>
+
+<p>Concept: &quot;As a <em>user type</em>, I want to <em>action</em> so I can <em>reason</em></p>
+
+<p>Below I have created a series of what might be called Marketing Profiles or Customer Persona if I was running an ad campaign.</p>
+
+<p>Each item has 3 sub items. 1st is technical requirements, the 2nd is difficulty, 3rd is time estimate in hours. Difficulty is rated from 1&#8211;10 , 10 being hardest. A &#8216;?&#8217; signifies the presence of Rumsfeldian &#8220;unknown unknowns&#8221; (ex: 5?)</p>
+
+<ol>
+<li>As a <strong>debater</strong> I want to be able to debate topics in a structured way so I can avoid the chaos of social media scream-fests and have enlightened, civilized discourse.
+ 1. The meat of the project is this &#8216;Argument&#8217; model, controller and views.
+ 2. 5 (I am excluding a pretty UI)
+ 3. 4 hours</li>
+<li>As a <strong>voyeur</strong> I want to be able to log in to be track and receive occassionaly updates on debates I am interested so I can watch and follow these debates.
+ 1. Mailer integration, user login (Devise), roles (Pandit). Also show on user home page what debates I have engaged in sorted by how recent
+ 2. 5? Mailer is a pain.
+ 3. 4 hours</li>
+<li>As a <strong>casual</strong> I want to be able to quickly get up to speed on debates and join debates once in a while so I can contribute my opinion.
+ 1. Implies some sort of great UI &amp; UX. Also how does one argue in a debate - the structure of &#8216;counterarguments&#8217; (posts, comments type implementation)
+ 2. 4 because I am not going to pretend I am a genius designer and going to spend a ton of time on this.
+ 3. 3 hours</li>
+<li>As a <strong>troll</strong> I want to be able to see the most popular or active debates to make comments in order to get maximum attention and lulz from the community.
+ 1. Need some sort of activity counter and list of active debates with info on activity
+ 2. 3 we did this with bloccit
+ 3. 2 hours</li>
+<li>As a <strong>compulsive liker</strong> I want the ability to upvote/like/star/favorite/+1 arguments or topics so as to show my support to points of view or comments I agree with.
+ 1. Need a vote model and presentation of votes by user
+ 2. 4 we did this with bloccit
+ 3. 4 hours because I remember this being tricky</li>
+<li>As a <strong>contrarian</strong> I want to be able to find debates where support for a position is lopsided and assist the underdog.
+ 1. Some sort of stats on users by side in the main debate list, some sort of declaration of &#8216;pro/con&#8217; by debate participants or automatically logging each argument as such.
+ 2. 7? I&#8217;m not sure how to implement this
+ 3. 8 hours</li>
+<li>As a <strong>pedant</strong> I want to be able to question specific word choice or phrasing so as to dive into and contest the original poster&#8217;s meaning.
+ 1. Some sort of &#8216;Genius.com&#8217; word tagging via GUI
+ 2. 10? No idea how to do this. It would be REALLY cool though.
+ 3. 20 hours</li>
+<li>As a <strong>high school debater</strong> I want to be able to easily workshop arguments for a position so I can practice my debate skills before and with a lay audience.
+ 1. Have a separate MVC for high school debate following LD and Policy formats
+ 2. 6
+ 3. 6 hours</li>
+<li>As a <strong>collegiate debater</strong> I want to be able to easily find more skilled, sophisticated debaters to hone my more specialized debating skills.
+ 1. Same model as &#8216;high school debater&#8217; but now some way to restrict entry into debate rooms either invite only or reputational or some sort of email validation for colleges.
+ 2. 8?
+ 3. 12 hours</li>
+<li>As a <strong>law student</strong> I want to engage in legal debates on topics of the day and increase my reputational score while exercising my arguing muscles.
+ 1. Create a &#8216;hot list&#8217; of trending topics? &#8216;Current events&#8217; secton at the home page? Perhaps need a way for users to tag this.
+ 2. 6?
+ 3. 8 hours</li>
+<li>As a <strong>grad student</strong> I want to find knowledgable debaters with field-specific knowledge so I can conduct debates in my field of study and acquire a reputation for expertise and increase my network.
+ 1. Same problem as #9 - need the equivalent of the high roller room in Las Vegas - exclusive but perhaps not totally private. Also need a way to tag topics.
+ 2. 9?
+ 3. 16 hours</li>
+<li>As a <strong>political junkie</strong> I want to Monday morning quarterback the various machinations of politicians with like minded people so I can make predictions and keep prognostication score.
+ 1. Not sure how we keep score on predictions. Who judges them and tracks them? Create a prediction model and then have them appoint other people to vote on whether it came true or not?
+ 2. 10?
+ 3. 20 hours</li>
+<li>As a <strong>partisan warrior</strong> I want to argue the points of my political party or ethos against people taking the opposing side and score and tally points against my ideological opponents.
+ 1. Not sure about scoring and how that would work. Reluctant to use votes to determine if an argument was good. Maybe use appointed mods to set win/loss? Countering and counter-countering is more clear. Timer on unanswered counters?
+ 2. 10?
+ 3. 20 hours</li>
+<li>As a <strong>religious/athiest zealot</strong> I want to argue the finer points of my personal theology so as to have opponents concede defeat and be converted to my point of view.
+ 1. Scoring is up in the air. Need to create a &#8216;concede&#8217; mechanism where an opponent can move on from a point they advanced but were parried on.
+ 2. 10?
+ 3. 20 hours</li>
+<li>As a <strong>political advertiser</strong> I want to pay money to reach highly motivated people full of passion so as to get them to respond to my call to action regarding a politician.
+ 1. I would need to find some sort of banner ad gem that I hope exists, and create a payment mechanism, as well as some sort of dashboard with stats plus a mechanism for advertisers to pick and choose where they engage in debate ads.
+ 2. 10?
+ 3. 40 hours</li>
+<li>As a <strong>cause fundraiser</strong> I want to pay money to have an opportunity to ask people for a donation who are embroiled in an active debate about a cause I am involved with.
+ 1. Same as &#8216;political advertiser&#8217;
+ 2. 10? Same as &#8216;political advertiser&#8217;
+ 3. 40 hours Same as &#8216;political advertiser&#8217;</li>
+<li>As a <strong>normal human user</strong> I want to avoid ugly name calling and bullying so I can have a pleasant experience.
+ 1.</li>
+<li>As a <strong>master debater</strong> (superuser? -ed.) I want to be able to see at a glance all of the debates I am embroiled in so I can quickly enter each debate and stay engaged.</li>
+<li>As an <strong>impassioned debater</strong> I want to be notified quickly when a debate I am involved in has been updated so I can respond quickly.
+ 1. SMS and mail integration for fast notifications
+ 2. 8? mostly for Twilio integration
+ 3. 20 hours</li>
+<li>As a <strong>geek niche debater</strong> I want to argue about sports, comics, pop music, sci-fi, anime, etc in a more structured context than traditional chat sites allow so I can demonstrate my subject mastery in a more rigorous arena.
+ 1. Need a search by topic and subtopic and keyword search
+ 2. 6
+ 3. 8 hours</li>
+<li>As a <strong>logic aficionado</strong> I want to be able to quickly access a stored library of logical fallacies to use when I am arguing to make it easier to counter and attack claims.
+ 1. Need to create a prebuilt list of logical fallacies that can be pulled down and searched to put intop counter arguments
+ 2. 7?
+ 3. 16 hours</li>
+<li>As a <strong>hall monitor</strong> I want to be able to easily flag comments and users who are abusive and/or in violation of debate guidelines so as to maintain a certain decorum about the site.
+ 1. Create &#8216;mod&#8217; role, flag attributes for mods on each comment, some sort of means of reviewing flags and then deleting or at least adding commentary as to why the comment was flagged. Worst case also a way to temporarily or permanently ban users and blacklist emails.
+ 2. 8?
+ 3. 20 hours</li>
+<li>As a <strong>noob</strong> I want to watch and engage in tutorials so I can learn how to debate in a safe space to get good enough to participate without getting my head torn off by more active users.
+ 1. Create a single player mode with automated responses
+ 2. 10? Short of artificial intelligence I would need to make the examples very very simple and not really a back and forth with the user.
+ 3. 24 hours and it would be ugly</li>
+<li>As a <strong>semi-noob</strong> I want to find debates where inexperienced debaters are engaged so I can find people of my equivalent skill level so as to engage in the thrill of debate without getting my ego crushed immediately.
+ 1. Some sort of experience rating system with users and capping entry into self-labeled amateur debates. Some sort of weight class division set up.
+ 2. 9?
+ 3. 20 hours</li>
+<li>As a <strong>debate addict</strong> I want to have the site notify me when I have spent far too much time on the site so I don&#8217;t neglect my family and job.
+ 1. Create elapsed time tracker attribute and present to user in profile plus custom notifications via email (or SMS?)
+ 2. 8? Mostly for Twilio integration
+ 3. 20 hours</li>
+<li>As a <strong>tourist</strong> I want to be able to be able to look up debates by topic without logging in so I can explore various debates of interest.
+ 1. Argument model, controller and views. &#8216;guest&#8217; role deliniated.
+ 2. 1
+ 3. 1 hour</li>
+</ol>
+
+</body>
+</html>
